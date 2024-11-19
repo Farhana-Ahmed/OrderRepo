@@ -25,9 +25,9 @@ public class KafkaProducerService {
         this.kafkaTemplate = kafkaTemplate;
     }
 
-    // Method to send messages to Kafka topic
+
     public void sendOrderToKafka(String orderJson) {
         System.out.println("Order sent");
-        kafkaTemplate.send("orders-topic", orderJson); // Replace with your topic name
+        kafkaTemplate.send("orders-topic", orderJson);
     }
 }
