@@ -21,15 +21,10 @@ public class OrderService {
         return orderRepository.findAll();
     }
 
-//    public Order saveOrder(Order order){
-//        return  orderRepository.save(order);
-//    }
 
     public Order saveOrder(Order order) {
         // Save the order in the database
         Order savedOrder = orderRepository.save(order);
-
-
         try {
             System.out.println("REQUEST IS HERE");
             String orderJson = objectMapper.writeValueAsString(savedOrder);

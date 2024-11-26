@@ -46,6 +46,12 @@
 <!--			<artifactId>spring-boot-starter-security</artifactId>-->
 <!--		</dependency>-->
 		<!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.7.2</version>
+		</dependency>
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt</artifactId>
